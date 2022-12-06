@@ -76,6 +76,10 @@ body {
   display: none;
 }
 
+#to-name, #from-name {
+  overflow-wrap: break-word;
+}
+
 #message {
   margin-top: 16px;
 }
@@ -89,7 +93,6 @@ body {
 }
 
 #create-link-box {
-  padding: 36px 36px;
   margin: 0 auto;
   display: none;
 }
@@ -118,7 +121,7 @@ body {
 }
 
 #link-to-copy {
-  width: 271px;
+  width: 270px;
 }
 
 #credit {
@@ -130,9 +133,8 @@ body {
   color: #000000;
 }
 
-textarea, input {
+input {
   font-family: "Courier Prime", monospace;
-  resize: none;
 }
 
 button {
@@ -180,10 +182,6 @@ button {
   font-size: 14px;
 }
 
-textarea {
-  width: 270px;
-}
-
 /* meant for mobile */
 @media only screen and (max-width: 424px) {
   body, button {
@@ -195,7 +193,7 @@ textarea {
   }
 
   .body-box {
-    padding: 1.5em 2em;
+    padding: 1.2em 1.6em;
   }
 
   #link-to-copy {

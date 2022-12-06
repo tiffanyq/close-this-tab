@@ -124,7 +124,7 @@ function openMainContent(e) {
   const response = e.target.innerText;
   const title = document.getElementById("title");
   if (response === "no") {
-    title.innerText = "nice!! keep it that way: here's ANOTHER tab you can close!!";
+    title.innerText = "nice!! keep it that way:\n here's ANOTHER tab you can close!!";
 
   }
   document.getElementById("question").style.display = "none";
