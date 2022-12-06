@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>you can close this</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <div id="main-content">
+      <div id="question" class="nested-main-content">
+        <div class="bold body-box fade-one">too many tabs open?</div>
+        <div id="question-button-tray" class="fade-two"><button id="yes">yes</button> <button id="no">no</button></div>
+      </div>
+      <div id="post-landing" class="nested-main-content">
+        <div class="body-box bold fade-one" id="title">          
+            whenever you're ready, here's the gift of one less thing: <br><br>a tab you can close :-)
+        </div>
+        <div class="body-box fade-two" id="message">
+            <div id="to"><span class="bold">to: </span><span id="to-name">you</span></div>
+            <div id="from"><span class="bold">from: </span><span id="from-name">me</span></div>
+            <div id="message-body">immersed in tabs. are you sinking, floating, swimming? <br>wishing you the seas you seek <3</div>
+        </div>
+        <button id="open-share-box" class="fade-three">
+            🚨 3 IN 1 DEAL! give the gifts of progress, completion, AND closure! 🚨
+        </button>
+      </div>
+      <div class="nested-main-content" id="create-link-box">
+        <button id="close-share-button" class="fade-one">close</button>
+        <div class="body-box fade-one">
+          <p id="cta" class="fade-two">3 IN 1 DEAL! give the gifts of progress, completion, AND closure!</p>
+          <div class="card-field">to:&nbsp;&nbsp;<input type="text" id="to-input" placeholder="recipient's name"></div>
+          <div class="card-field">from:<input type="text" id="from-input" placeholder="your name"></div>
+          <div id="link-container">
+            <span>then share this link:</span>
+            <div id="copy-bar">
+              <input type="text" id="link-to-copy" name="link-to-copy" value="https://closethistab.com" aria-label="Link to send to recipient" readonly="">
+              <button id="copy-button">copy</button>
+            </div>
+          </div>
+          <div id="credit">by <a href="https://www.instagram.com/anotherbrowsertab/" target="_blank">anotherbrowsertab</a></div>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

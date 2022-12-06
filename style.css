@@ -1,0 +1,205 @@
+@keyframes slideFadeInFromBottom {
+	0% {
+    transform: translateY(12%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-zero, .fade-one, .fade-two, .fade-three, .fade-four {
+	animation: 1.2s ease-out 0s 1 slideFadeInFromBottom;
+	animation-fill-mode: both;
+}
+
+.fade-one {
+	animation-delay: 0.1s;
+}
+
+.fade-two {
+	animation-delay: 0.4s;
+}
+
+.fade-three {
+	animation-delay: 0.7s;
+}
+
+.fade-four {
+	animation-delay: 1s;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Courier Prime', monospace;
+  font-size: 16px;
+  max-width: 444px;
+  line-height: 1.6em;
+  z-index: 1;
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.body-box {
+  padding: 2em 2em;
+  background-color: rgba(245,241,231,0.9);
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+#post-landing {
+  display: none;
+}
+
+#message {
+  margin-top: 16px;
+}
+
+#message-body {
+  margin-top: 16px;
+}
+
+#from-line {
+  text-align: right;
+}
+
+#create-link-box {
+  padding: 36px 36px;
+  margin: 0 auto;
+  display: none;
+}
+
+#cta {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.card-field {
+  margin-bottom: 12px;
+}
+
+.card-field input {
+  width: 160px;
+  margin-left: 8px;
+}
+
+#link-container {
+  margin-top: 36px;
+}
+
+#copy-bar {
+  display: inline-flex;
+}
+
+#link-to-copy {
+  width: 271px;
+}
+
+#credit {
+  text-align: center;
+  padding-top: 32px;
+}
+
+#credit a {
+  color: #000000;
+}
+
+textarea, input {
+  font-family: "Courier Prime", monospace;
+  resize: none;
+}
+
+button {
+  font-family: "Courier Prime", monospace;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#open-share-box, #close-share-button, #copy-button, #question-button-tray button {
+  border: 1px solid #f5f1e7;
+  background-color: #0e1a41;
+  color: #f5f1e7;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+
+#open-share-box:hover, #close-share-button:hover, #copy-button:hover, #question-button-tray button:hover {
+  border: 1px solid #f5f1e7;
+  background-color: #f5f1e7;
+  color: #0e1a41;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#open-share-box {
+  padding: 1.2em 2em;
+  margin-top: 32px;
+}
+
+#question-button-tray button {
+  padding: 0.4em 2em;
+  width: 120px;
+  margin-top: 12px;
+}
+
+#close-share-button {
+  padding: 0.4em 1em;
+  margin-bottom: 8px;
+}
+
+#copy-button {
+  font-size: 14px;
+}
+
+textarea {
+  width: 270px;
+}
+
+/* meant for mobile */
+@media only screen and (max-width: 424px) {
+  body, button {
+    font-size: 14px;
+  }
+
+  #post-landing, #create-link-box {
+    width: 336px;
+  }
+
+  .body-box {
+    padding: 1.5em 2em;
+  }
+
+  #link-to-copy {
+    width: 180px;
+  }
+
+}
