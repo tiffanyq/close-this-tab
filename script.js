@@ -2,7 +2,7 @@ let toForURL="";
 let fromForURL="";
 
 
-const BASE_URL = "https://closethistab.com?"
+const BASE_URL = "closethistab.com?"
 const ALPHABET = {
   "a": "n",
   "b": "o",
@@ -129,6 +129,7 @@ function openMainContent(e) {
   }
   document.getElementById("question").style.display = "none";
   document.getElementById("post-landing").style.display = "block";
+  document.getElementById("open-share-box").style.display = "block";
 }
 
 function openShareDialog() {

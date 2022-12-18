@@ -23,6 +23,9 @@
     <script src="sketch.js"></script>
   </head>
   <body>
+    <button id="open-share-box" class="fade-one">
+        share
+    </button>
     <div id="main-content">
       <div id="question" class="nested-main-content">
         <div class="bold body-box fade-one">too many tabs open?</div>
@@ -30,27 +33,23 @@
       </div>
       <div id="post-landing" class="nested-main-content">
         <div class="body-box bold fade-one" id="title">          
-            here's the gift of one less thing: <br><br>a tab you can close :-)
+            here's the gift of one less thing: <br>a tab you can close :-)
         </div>
         <div class="body-box fade-two" id="message">
             <div id="to"><span class="bold">to: </span><span id="to-name">you</span></div>
             <div id="from"><span class="bold">from: </span><span id="from-name">me</span></div>
-            <div id="message-body">sinking, floating, or swimming in your tabs, i wish you the seas you seek <3</div></3>
         </div>
-        <button id="open-share-box" class="fade-three">
-            🚨 3 IN 1 DEAL! give the gifts of progress, completion, AND closure! 🚨
-        </button>
       </div>
       <div class="nested-main-content" id="create-link-box">
         <button id="close-share-button" class="fade-one">close</button>
         <div class="body-box fade-one">
-          <p id="cta" class="fade-two">3 IN 1 DEAL! give the gifts of progress, completion, AND closure!</p>
+          <p id="cta" class="fade-two">share</p>
           <div class="card-field">to:&nbsp;&nbsp;<input type="text" id="to-input" placeholder="recipient's name"></div>
           <div class="card-field">from:<input type="text" id="from-input" placeholder="your name"></div>
           <div id="link-container">
             <span>then share this link:</span>
             <div id="copy-bar">
-              <input type="text" id="link-to-copy" name="link-to-copy" value="https://closethistab.com" aria-label="Link to send to recipient" readonly="">
+              <input type="text" id="link-to-copy" name="link-to-copy" value="closethistab.com" aria-label="Link to send to recipient" readonly="">
               <button id="copy-button">copy</button>
             </div>
           </div>

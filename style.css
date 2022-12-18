@@ -49,8 +49,7 @@ body {
   position: relative;
   font-family: 'Courier Prime', monospace;
   font-size: 16px;
-  max-width: 444px;
-  line-height: 1.6em;
+  line-height: 2em;
   z-index: 1;
 }
 
@@ -66,6 +65,7 @@ body {
   padding: 2em 2em;
   background-color: rgba(245,241,231,0.9);
   margin-bottom: 10px;
+  max-width: 384px;
 }
 
 .bold {
@@ -163,18 +163,23 @@ button {
 }
 
 #open-share-box {
-  padding: 1.2em 2em;
-  margin-top: 32px;
+  margin-bottom: 16px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 120px;
+  padding: 0.6em 1em;
+  display: none;
 }
 
 #question-button-tray button {
-  padding: 0.4em 2em;
+  padding: 0.6em 2em;
   width: 120px;
   margin-top: 12px;
 }
 
 #close-share-button {
-  padding: 0.4em 1em;
+  padding: 0.6em 1em;
   margin-bottom: 8px;
 }
 
